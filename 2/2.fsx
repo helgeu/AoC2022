@@ -15,7 +15,7 @@ let getChosen x =
 
 let fc = 
     File
-        .ReadLines("2\\input.txt")
+        .ReadLines("input.txt")
     |> Seq.map(fun s -> s.Split(" "))
     |> Seq.map(Seq.map getChosen)
 
